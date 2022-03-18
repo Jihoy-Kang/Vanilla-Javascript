@@ -82,9 +82,43 @@ let str = "Hello World!"
 console.log(str.charAt(0))
 
 //charCodeAt() - 문자열에서 특정 인덳에 해당하는 문자 유니코드로 반환
-console.log(str.charCodeAt(0)) */
+console.log(str.charCodeAt(0))
 
 //split() - 문자 내 특정 구분자를 기준으로 문자열을 분리해서 배열로 반환
 let birthday = "1997-06-12"
 let arr2 = birthday.split("-")
 console.log(arr2)
+let arr3 = ["a","b","c","d"]
+
+console.log(arr2.toString())
+console.log(arr2.pop())
+console.log(arr2.shift())
+console.log(arr3.join(" "))
+console.log(arr3.unshift("f"))
+
+
+let file = 'abc.pdf'
+
+if(file.startsWith('abc')){
+    console.log("맞아")
+}else{
+    console.log("안맞아")
+}
+
+if(file.endsWith('.pdf')){
+    console.log("맞아")
+}else{
+    console.log("안맞아")
+}
+
+let x = 123.222
+console.log(typeof(x))
+console.log(typeof(x.toString()))
+console.log(x.toFixed(1)) //소수 x번째 자리까지 표현
+console.log(x.toPrecision(1)) //정수 소수 포함 x 번째 자리까지 표현
+console.log(parseInt(x)) // 정수 반환
+
+ */
+
+let arr3 = ["a","b","c","d"]
+console.log(arr3.splice(0,0,"ff"))
